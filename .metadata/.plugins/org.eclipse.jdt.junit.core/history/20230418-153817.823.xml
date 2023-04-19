@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteCarrinhoDeCompras" project="eCommerce" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="eCommerce.TesteCarrinhoDeCompras" time="0.008">
-    <testcase name="adicionaDoisProdutosCodigosDiferentes" classname="eCommerce.TesteCarrinhoDeCompras" time="0.007"/>
-    <testcase name="adicionaUmProduto" classname="eCommerce.TesteCarrinhoDeCompras" time="0.001"/>
-  </testsuite>
-</testrun>
