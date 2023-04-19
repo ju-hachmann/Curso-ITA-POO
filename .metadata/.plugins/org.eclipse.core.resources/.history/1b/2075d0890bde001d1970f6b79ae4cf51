@@ -1,0 +1,15 @@
+
+public class CarroMultiplica extends CarroDeCorrida {
+	
+	public CarroMultiplica(String nome, int velocidadeMaxima) {
+		super(nome, velocidadeMaxima);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void acelerar() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

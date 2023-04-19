@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="eCommerce" project="eCommerce" tests="17" started="17" failures="0" errors="0" ignored="0">
+  <testsuite name="eCommerce.TesteCarrinhoDeCompras" time="0.0">
+    <testcase name="valorTotalDoCarrinhoCheio" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="valorTotalDoCarrinhoVazio" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigoIgualTamanhoDiferente" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="removeUmItem" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigoIgualTamanhoIgual" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigoIgualClassesDiferentes" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigoIgualPrecoDiferente" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigoDiferenteTamanhoIgual" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaDoisProdutosCodigosDiferentes" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaUmProduto" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+    <testcase name="adicionaUmProdutoComTamanho" classname="eCommerce.TesteCarrinhoDeCompras" time="0.0"/>
+  </testsuite>
+  <testsuite name="eCommerce.TesteProdutoComTamanho" time="0.001">
+    <testcase name="codigosIguaisTamanhosIguais" classname="eCommerce.TesteProdutoComTamanho" time="0.0"/>
+    <testcase name="codigosDiferentesTamanhosDiferentes" classname="eCommerce.TesteProdutoComTamanho" time="0.001"/>
+    <testcase name="codigosDiferentesTamanhosIguais" classname="eCommerce.TesteProdutoComTamanho" time="0.0"/>
+    <testcase name="codigosIguaisTamanhosDiferentes" classname="eCommerce.TesteProdutoComTamanho" time="0.0"/>
+  </testsuite>
+  <testsuite name="eCommerce.TesteProduto" time="0.0">
+    <testcase name="doisCodigosDiferentes" classname="eCommerce.TesteProduto" time="0.0"/>
+    <testcase name="doisCodigosIguais" classname="eCommerce.TesteProduto" time="0.0"/>
+  </testsuite>
+</testrun>

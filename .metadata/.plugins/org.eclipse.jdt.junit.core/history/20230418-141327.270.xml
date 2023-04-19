@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carros" project="Carros" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="TesteCarroSoma" time="0.0" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]">
+    <testcase name="testeAcelerarAteVelocidadeMaxima" classname="TesteCarroSoma" time="0.0" displayname="testeAcelerarAteVelocidadeMaxima" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]/[test:testeAcelerarAteVelocidadeMaxima(TesteCarroSoma)]"/>
+    <testcase name="testeFrear" classname="TesteCarroSoma" time="0.0" displayname="testeFrear" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]/[test:testeFrear(TesteCarroSoma)]"/>
+    <testcase name="testeCarroParado" classname="TesteCarroSoma" time="0.0" displayname="testeCarroParado" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]/[test:testeCarroParado(TesteCarroSoma)]"/>
+    <testcase name="testeAcelerar" classname="TesteCarroSoma" time="0.0" displayname="testeAcelerar" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]/[test:testeAcelerar(TesteCarroSoma)]"/>
+    <testcase name="testeFrearAteZero" classname="TesteCarroSoma" time="0.0" displayname="testeFrearAteZero" uniqueid="[engine:junit-vintage]/[runner:TesteCarroSoma]/[test:testeFrearAteZero(TesteCarroSoma)]"/>
+  </testsuite>
+  <testsuite name="TesteCarroMult" time="0.0" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]">
+    <testcase name="testeAcelerarAteVelocidadeMaxima" classname="TesteCarroMult" time="0.0" displayname="testeAcelerarAteVelocidadeMaxima" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeAcelerarAteVelocidadeMaxima(TesteCarroMult)]"/>
+    <testcase name="testeFrear" classname="TesteCarroMult" time="0.0" displayname="testeFrear" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeFrear(TesteCarroMult)]"/>
+    <testcase name="testeCarroParado" classname="TesteCarroMult" time="0.0" displayname="testeCarroParado" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeCarroParado(TesteCarroMult)]"/>
+    <testcase name="testeAcelerarDuasVezes" classname="TesteCarroMult" time="0.0" displayname="testeAcelerarDuasVezes" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeAcelerarDuasVezes(TesteCarroMult)]"/>
+    <testcase name="testeFrearAteZero" classname="TesteCarroMult" time="0.0" displayname="testeFrearAteZero" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeFrearAteZero(TesteCarroMult)]"/>
+    <testcase name="testeAcelerarUmaVez" classname="TesteCarroMult" time="0.0" displayname="testeAcelerarUmaVez" uniqueid="[engine:junit-vintage]/[runner:TesteCarroMult]/[test:testeAcelerarUmaVez(TesteCarroMult)]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Paciente pacienteA = new Paciente(55, 178);
+		Paciente pacienteB = new Paciente(98, 166);
+		Paciente pacienteC = new Paciente(130, 175);
+
+		pacienteA.diagnostico();
+		pacienteB.diagnostico();
+		pacienteC.diagnostico();
+		
+	}
+
+}

@@ -1,0 +1,104 @@
+import java.util.ArrayList;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+
+public class TestePizza {
+
+	
+	@Before
+	public void zeraListaIngredientes() {
+		Pizza.esvaziaIngrediente();
+	}
+
+	
+	@Test
+	public void listaVazia() {
+		assertEquals(0, Pizza.totalIngredientes.size());
+	}
+	
+	
+	@Test
+	public void adicionaUmIngrediente() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		assertEquals(1, p.ingredientes.size());
+		assertEquals(1, Pizza.totalIngredientes.size());
+	}
+	
+	
+	@Test
+	public void adicionaDoisIngredientesDiferentes() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		p.adicionaIngrediente("mussarela");
+		assertEquals(2, p.ingredientes.size());
+		assertEquals(2, Pizza.totalIngredientes.size());
+	}
+	
+	
+	@Test
+	public void adicionaDoisIngredientesIguais() {
+		Pizza p = new Pizza();
+		String ingrediente = "calabresa";
+		p.adicionaIngrediente(ingrediente);
+		p.adicionaIngrediente(ingrediente);
+		assertEquals(1, p.ingredientes.size());
+		assertEquals(1, Pizza.totalIngredientes.size());
+		// assertEquals(1, Pizza.totalIngredientes.get(ingrediente));
+	}
+	
+	
+	@Test
+	public void precoZeroIngredientes() {
+		Pizza p = new Pizza();
+		assertEquals(0, p.getPreco());
+	}
+	
+	@Test
+	public void precoUmIngrediente() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		assertEquals(15, p.getPreco());
+	}
+
+	
+	@Test
+	public void precoDoisIngredientes() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		p.adicionaIngrediente("mussarela");
+		assertEquals(15, p.getPreco());
+	}
+	
+	@Test
+	public void precoTresIngredientesDoisIguais() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		p.adicionaIngrediente("calabresa");
+		p.adicionaIngrediente("mussarela");
+		assertEquals(2, p.ingredientes.size());
+		assertEquals(15, p.getPreco());
+	}
+	
+	@Test
+	public void precoTresIngredientes() {
+		Pizza p = new Pizza();
+		p.adicionaIngrediente("calabresa");
+		p.adicionaIngrediente("mussarela");
+		p.adicionaIngrediente("bacon");
+		assertEquals(3, p.ingredientes.size());
+		assertEquals(20, p.getPreco());
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,40 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TesteRegistroPontos {
+
+	@Test
+	public void pontosCriarTopico() {
+		Usuario user = new Usuario();
+		user.nome = "Juliana";
+		CalculadoraBonus cb = new CalculadoraBonus();
+		RegistroPontos rp = new RegistroPontos(cb);
+		rp.criarUmTopico(user);
+		assertEquals(5, user.pontos);
+	}
+	
+	@Test
+	public void pontosCriarTopicoVIP() {
+		Usuario user = new Usuario();
+		user.nome = "Juliana";
+		user.vip = true;
+		CalculadoraBonus cb = new CalculadoraBonus();
+		RegistroPontos rp = new RegistroPontos(cb);
+		rp.criarUmTopico(user);
+		assertEquals(25, user.pontos);
+	}
+	
+	@Test
+	public void pontosCriarTopicoBonusDoDia() {
+		Usuario user = new Usuario();
+		user.nome = "Juliana";
+		CalculadoraBonus cb = new CalculadoraBonus();
+		cb.bonusDoDia = 3;
+		RegistroPontos rp = new RegistroPontos(cb);
+		rp.criarUmTopico(user);
+		assertEquals(15, user.pontos);
+	}
+	
+
+}

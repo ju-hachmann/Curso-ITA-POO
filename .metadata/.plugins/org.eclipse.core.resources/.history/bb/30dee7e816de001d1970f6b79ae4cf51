@@ -1,0 +1,22 @@
+package eCommerce;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class CarrinhoDeCompras {
+
+	private Map<Produto, Integer> produtos = new HashMap<>();
+	
+	public void adicionaProduto(Produto p, Integer quantidade) {
+		if (produtos.containsKey(p)) {
+			quantidade += produtos.get(p);
+		}
+		produtos.put(p, quantidade);
+	}
+	
+	public int getSizeProdutos() {
+		return produtos.size();
+	}
+
+}

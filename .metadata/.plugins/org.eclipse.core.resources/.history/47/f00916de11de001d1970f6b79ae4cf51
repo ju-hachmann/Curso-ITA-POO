@@ -1,0 +1,10 @@
+package eCommerce;
+
+public class ProdutoComTamanho extends Produto {
+
+	public ProdutoComTamanho(String nome, int codigo, double preco) {
+		super(nome, codigo, preco);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,62 @@
+package eCommerce;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TesteCarrinhoDeCompras {
+
+	Produto p1;
+	ProdutoComTamanho pT1;
+	CarrinhoDeCompras cc;
+	
+	@Before
+	public void inicializaProdutosECarrinho() {
+		p1 = new Produto("Produto A", 1, 10);
+		pT1 = new ProdutoComTamanho("Produto com tamanho A", 1, 10, 40);
+		cc = new CarrinhoDeCompras();
+	}
+	
+	@Test
+	public void adicionaUmProduto() {
+		cc.adicionaProduto(p1, 1);
+		assertEquals(1, cc.getSizeProdutos());
+	}
+	
+	@Test
+	public void adicionaDoisProdutosDiferentes() {
+		cc.adicionaProduto(p1, 1);
+		cc.adicionaProduto(new Produto("Produto B", 2, 20), 1);
+		assertEquals(2, cc.getSizeProdutos());
+	}
+	
+	@Test
+	public void adicionaDoisProdutosIguais() {
+		cc.adicionaProduto(p1, 1);
+		cc.adicionaProduto(new Produto("Produto B", 1, 20), 1);
+		assertEquals(1, cc.getSizeProdutos());
+	}
+	
+	@Test
+	public void adicionaUmProdutoComTamanho() {
+		cc.adicionaProduto(pT1, 1);
+		assertEquals(1, cc.getSizeProdutos());
+	}
+	
+	@Test
+	public void adicionaDoisProdutosCodigoIgualTamanhoIgual() {
+		cc.adicionaProduto(p1, 1);
+		cc.adicionaProduto(new ProdutoComTamanho("Produto B", 1, 10, 40), 1);
+		assertEquals(1, cc.getSizeProdutos());
+	}
+	
+//	@Test
+//	public void adicionaDoisProdutosIguais() {
+//		cc.adicionaProduto(p1, 1);
+//		cc.adicionaProduto(new Produto("Produto B", 1, 20), 1);
+//		assertEquals(1, cc.getSizeProdutos());
+//	}
+//	
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteProduto" project="eCommerce" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="eCommerce.TesteProduto" time="0.005">
+    <testcase name="doisCodigosDiferentes" classname="eCommerce.TesteProduto" time="0.004"/>
+    <testcase name="doisCodigosIguais" classname="eCommerce.TesteProduto" time="0.001"/>
+  </testsuite>
+</testrun>

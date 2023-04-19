@@ -1,0 +1,12 @@
+
+public class Corrida {
+
+	private int pista;
+	private 
+	
+	public Corrida (int tamanho) {
+		pista = tamanho;
+	}
+	
+	
+}
