@@ -2,28 +2,42 @@
 public class Respeitoso implements FormatadorNome {
 
 	private char genero;
-	private String nome;
-	private String sobrenome;
+	private String tratamento;
 	
-	
-	public Respeitoso(char genero, String nome, String sobrenome) {
-		if (genero == 'f' || genero == 'm') {
-			this.genero = genero;			
-		}
-		this.nome = nome;
-		this.sobrenome = sobrenome;
+	public Respeitoso(char genero) {
+		setGenero(genero);
+		setTratamento();
 	}
-
+	
+	
+	private void setGenero(char genero) {
+		if (genero == 'f' || genero == 'F') {
+			this.genero = 'f';
+		}
+		else if (genero == 'm' || genero == 'M') {
+			this.genero = 'm';
+		}
+		else {
+			this.genero = 's';
+		}
+	}
+	
+	
+	private void setTratamento() {
+		if (this.genero == 'f') {
+			this.tratamento = "Sra.";
+		}
+		else if (this.genero == 'm') {
+			this.tratamento = "Sr.";
+		}
+		else {
+			this.tratamento = "Sr./Sra.";
+		}
+	}
+	
 
 	@Override
 	public String formatarNome(String nome, String sobrenome) {
-		String tratamento = "Sr./Sra.";
-		if (this.genero == 'f') {
-			tratamento = "Sra.";
-		}
-		else if (this.genero == 'm') {
-			tratamento = "Sr.";
-		}
 		return tratamento + " " + nome + " " + sobrenome;
 	}
 

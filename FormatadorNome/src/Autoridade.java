@@ -11,8 +11,8 @@ public class Autoridade {
 		this.tratamento = tratamento;
 	}
 	
-	public void getTratamento() {
-		tratamento.formatarNome();
+	public String getTratamento() {
+		return tratamento.formatarNome(this.nome, this.sobrenome);
 	}
 	
 }

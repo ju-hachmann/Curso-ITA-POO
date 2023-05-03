@@ -1,6 +1,0 @@
-
-public interface FomatadorNome {
-
-	public String formatarNome(String nome, String sobrenome);
-	
-}
